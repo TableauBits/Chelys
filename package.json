@@ -1,6 +1,6 @@
 {
 	"name": "@tableaubits/hang",
-	"version": "0.0.5",
+	"version": "1.0.0",
 	"description": "Common code between Yatga and Kalimba",
 	"main": "dist/index.js",
 	"scripts": {
