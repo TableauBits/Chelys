@@ -10,7 +10,7 @@ export function createMessage<T>(event: string, data: T): string {
 export function extractMessageData<T>(message: Message<unknown>): T {
 	return message.data as T;
 }
-export enum EventTypes {
+export enum EventType {
 	// From client
 	CLIENT_authenticate = "CLIENT-authenticate",
 	CLIENT_ping = "CLIENT-ping",

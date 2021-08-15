@@ -2,6 +2,7 @@
 
 export enum ConstitutionType {
 	GRADE,
+	LENGTH
 }
 
 export enum AnonymousLevel {
