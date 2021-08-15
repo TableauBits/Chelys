@@ -1,5 +1,5 @@
 {
-	"name": "hang",
+	"name": "@tableaubits/hang",
 	"version": "0.0.1",
 	"description": "Common code between Yatga and Kalimba",
 	"main": "index.js",
