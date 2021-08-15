@@ -1,6 +1,6 @@
 {
 	"name": "@tableaubits/hang",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "Common code between Yatga and Kalimba",
 	"main": "index.js",
 	"scripts": {
@@ -22,8 +22,9 @@
 		"typescript": "^4.3.5"
 	},
 	"files": [
-		"dist/**/*"
+		"dist/**/*.js"
 	],
+	"types": "dist/index.d.ts",
 	"publishConfig": {
 		"registry": "https://npm.pkg.github.com/TableauBits",
 		"access": "public"
