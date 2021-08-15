@@ -32,12 +32,15 @@ export interface Constitution {
 export interface CstReqGet {
 	ids: string[];
 }
+
 export interface CstReqCreate {
 	cstData: Constitution;
 }
+
 export interface CstReqJoin {
 	id: string;
 }
+
 export interface CstReqUnsubscribe {
 	ids: string[];
 }
@@ -45,3 +48,5 @@ export interface CstReqUnsubscribe {
 export interface CstResUpdate {
 	cstInfo: Constitution;
 }
+
+export type CstReqGetFromUser = {}

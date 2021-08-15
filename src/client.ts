@@ -7,6 +7,10 @@ export interface ResponseStatus {
 
 // REQUESTS / RESPONSES
 
-export interface CLTReqAuthenticate {
+export interface CltReqAuthenticate {
 	idToken: string;
+}
+
+export interface CltReqPing {
+	data: string;
 }
