@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    - uses: jgierer12/npm-auth-gpr@v1
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
     - run: |
         npm config set //npm.pkg.github.com/:_authToken $TOKEN
         npm install
