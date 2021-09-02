@@ -15,19 +15,27 @@ export enum EventType {
 	CLIENT_authenticate = "CLIENT-authenticate",
 	CLIENT_ping = "CLIENT-ping",
 
-	USER_get = "USER-get",
-	USER_get_all = "USER-get-all",
-	USER_edit = "USER-edit",
-	USER_create = "USER-create",
-	USER_unsubscribe = "USER-unsubscribe",
-
+	CST_create = "CST-create",
 	CST_get = "CST-get",
 	CST_get_from_user = "CST-get-from-user",
-	CST_create = "CST-create",
 	CST_join = "CST-join",
 	CST_unsubscribe = "CST-unsubscribe",
 
+	SONG_add = "SONG-add",
+	SONG_get_all = "SONG-get-all",
+	SONG_get_user = "SONG-get-user",
+	SONG_remove = "SONG-remove",
+
+
+	USER_create = "USER-create",
+	USER_edit = "USER-edit",
+	USER_get = "USER-get",
+	USER_get_all = "USER-get-all",
+	USER_unsubscribe = "USER-unsubscribe",
+
+
 	// From server
-	USER_update = "USER-update",
 	CST_update = "CST-update",
+
+	USER_update = "USER-update",
 }

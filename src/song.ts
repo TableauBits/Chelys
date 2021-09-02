@@ -1,11 +1,11 @@
-export enum SongPlateform {
+export enum SongPlatform {
   YOUTUBE
 }
 
 export interface Song {
   id: number
   title: string;
-  platform: SongPlateform;
+  platform: SongPlatform;
   url: string;
   user: string;
   author: string;
