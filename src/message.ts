@@ -23,7 +23,6 @@ export enum EventType {
 
 	CST_SONG_add = "CST-SONG-add",
 	CST_SONG_get_all = "CST-SONG-get-all",
-	CST_SONG_get_user = "CST-SONG-get-user",
 	CST_SONG_remove = "CST-SONG-remove",
 
 	USER_create = "USER-create",

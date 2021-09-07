@@ -11,11 +11,28 @@ export interface Song {
   author: string;
 }
 
-const EMPTY_SONG: Song = {
+export const EMPTY_SONG: Song = {
   id: -1,
   title: '',
   platform: -1,
   url: '',
   user: '',
   author: '',
+}
+
+// REQUESTS / RESPONSES
+
+export interface CstSongReqAdd {
+  cstId: string;
+  songData: Song;
+}
+
+export interface CstSongReqRemove {
+  cstId: string;
+  songId: number;
+}
+
+export interface CstSongReqGetAll {
+  cstId: string;
+  uid: string;
 }
