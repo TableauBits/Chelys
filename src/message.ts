@@ -31,7 +31,6 @@ export enum EventType {
 	USER_get_all = "USER-get-all",
 	USER_unsubscribe = "USER-unsubscribe",
 
-
 	// From server
 	CST_update = "CST-update",
 

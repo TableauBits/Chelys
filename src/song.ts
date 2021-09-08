@@ -36,3 +36,12 @@ export interface CstSongReqGetAll {
   cstId: string;
   uid: string;
 }
+
+export interface CstSongResUpdate {
+  songInfo: Song;
+  status: "added" | "deleted" | "modified";
+}
+
+export interface CstSongReqUnsubscribe {
+  cstId: string;
+}
