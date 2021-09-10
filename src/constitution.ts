@@ -1,4 +1,4 @@
-// TYPE
+// TYPE / CONST
 
 export const OWNER_INDEX = 0;
 
@@ -42,6 +42,25 @@ export const EMPTY_CONSTITUTION: Constitution =  {
   numberOfSongsPerUser: -1,
   playlistLink: '',
   users: []
+}
+
+// FUNCTION
+
+export function canModifySongs(constitution: Constitution): boolean {
+	switch (constitution.type) {
+		case ConstitutionType.GRADE: return constitution.state !== 0;	// TODO : Magic Number
+	
+		default:
+			return false;
+	}
+}
+
+export function canModifyVotes(constitution: Constitution): boolean {
+	switch (constitution.type) {
+		case ConstitutionType.GRADE: return constitution.state < 1; // TODO : Magic Number
+		default:
+			return false;
+	}
 }
 
 // REQUESTS / RESPONSES

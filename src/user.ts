@@ -1,4 +1,4 @@
-// TYPE
+// TYPE / CONST
 
 export enum Role {
 	ADMIN = "admin",

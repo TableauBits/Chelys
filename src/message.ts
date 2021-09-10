@@ -1,15 +1,10 @@
+// TYPE / CONST
+
 export interface Message<T> {
 	event: string
 	data: T
 }
 
-export function createMessage<T>(event: string, data: T): string {
-	return JSON.stringify({ event: event, data: data });
-}
-
-export function extractMessageData<T>(message: Message<unknown>): T {
-	return message.data as T;
-}
 export enum EventType {
 	// From client
 	CLIENT_authenticate = "CLIENT-authenticate",
@@ -33,6 +28,16 @@ export enum EventType {
 
 	// From server
 	CST_update = "CST-update",
-
+	CST_SONG_update = "CST-SONG_update",
 	USER_update = "USER-update",
+}
+
+// FUNCTION
+
+export function createMessage<T>(event: string, data: T): string {
+	return JSON.stringify({ event: event, data: data });
+}
+
+export function extractMessageData<T>(message: Message<unknown>): T {
+	return message.data as T;
 }
