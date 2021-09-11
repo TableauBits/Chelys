@@ -41,7 +41,7 @@ export interface CstSongReqGetAll {
 
 export interface CstSongResUpdate {
   songInfo: Song;
-  status: "added" | "deleted" | "modified";
+  status: "added" | "modified" | "removed";
 }
 
 export interface CstSongReqUnsubscribe {
