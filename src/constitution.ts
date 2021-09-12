@@ -48,7 +48,7 @@ export const EMPTY_CONSTITUTION: Constitution =  {
 
 export function canModifySongs(constitution: Constitution): boolean {
 	switch (constitution.type) {
-		case ConstitutionType.GRADE: return constitution.state !== 0;	// TODO : Magic Number
+		case ConstitutionType.GRADE: return constitution.state === 0;	// TODO : Magic Number
 	
 		default:
 			return false;
