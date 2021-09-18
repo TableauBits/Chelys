@@ -36,7 +36,6 @@ export interface CstSongReqRemove {
 
 export interface CstSongReqGetAll {
   cstId: string;
-  uid: string;
 }
 
 export interface CstSongResUpdate {
