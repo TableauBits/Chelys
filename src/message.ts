@@ -16,6 +16,12 @@ export enum EventType {
 	CST_join = "CST-join",
 	CST_unsubscribe = "CST-unsubscribe",
 
+	CST_GRADE_edit = "CST-GRADE-edit",
+	CST_GRADE_get_all = "CST-GRADE-get-all",
+	CST_GRADE_get_user = "CST-GRADE-get-user",
+	CST_GRADE_get_summary = "CST-GRADE-get-summary",
+	CST_GRADE_unsubscribe = "CST-GRADE-unsubscribe",
+
 	CST_SONG_add = "CST-SONG-add",
 	CST_SONG_get_all = "CST-SONG-get-all",
 	CST_SONG_remove = "CST-SONG-remove",
@@ -29,6 +35,7 @@ export enum EventType {
 
 	// From server
 	CST_update = "CST-update",
+	CST_GRADE_update = "CST-GRADE-update",
 	CST_SONG_update = "CST-SONG-update",
 	USER_update = "USER-update",
 }
