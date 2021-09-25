@@ -10,13 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: jgierer12/npm-auth-gpr@v1
+    - uses: actions/setup-node@v2
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
+        node-version: '12.x'
+        registry-url: 'https://registry.npmjs.org'
     - run: |
-        npm config set //npm.pkg.github.com/:_authToken $TOKEN
         npm install
         npm run build
         npm publish
       env:
-        TOKEN: ${{secrets.GITHUB_TOKEN}}
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
