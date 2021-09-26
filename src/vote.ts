@@ -1,42 +1,46 @@
 // TYPE / CONST
 
 export interface GradeVote {
-  songId: number;
-  grade: number;
+	songId: number;
+	grade: number;
 }
 
 export interface GradeUserData {
-  uid: string;
-  values: Map<number, number>;
+	uid: string;
+	values: Map<number, number>;
 }
 
 export interface GradeSummary {
-  voteCount: number;
+	voteCount: number;
 }
 
 // REQUESTS / RESPONSES
 
 export interface CstGradeReqEdit {
-  cstId: string,
-  voteData: GradeVote
+	cstId: string,
+	voteData: GradeVote
 }
 
 export interface CstGradeReqGetAll {
-  cstId: string;
+	cstId: string;
 }
 
 export interface CstGradeReqGetUser {
-  cstId: string;
+	cstId: string;
 }
 
 export interface CstGradeReqGetSummary {
-  cstId: string;
+	cstId: string;
 }
 
 export interface CstGradeReqUnsubscribe {
-  cstId: string;
+	cstId: string;
 }
 
-export interface CstGradeResUpdate {
+export interface CstGradeResUserDataUpdate {
+	userData: GradeSummary;
+}
+
+export interface CstGradeResSummaryUpdate {
 	summary: GradeSummary;
 }
