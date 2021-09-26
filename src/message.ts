@@ -10,7 +10,7 @@ export enum EventType {
 	CLIENT_authenticate = "CLIENT-authenticate",
 	CLIENT_ping = "CLIENT-ping",
 
-	CST_create = "CST-create", 
+	CST_create = "CST-create",
 	CST_get = "CST-get",
 	CST_get_from_user = "CST-get-from-user",
 	CST_join = "CST-join",
@@ -35,7 +35,8 @@ export enum EventType {
 
 	// From server
 	CST_update = "CST-update",
-	CST_GRADE_update = "CST-GRADE-update",
+	CST_GRADE_summary_update = "CST-GRADE-summary-update",
+	CST_GRADE_userdata_update = "CST-GRADE-userdata-update",
 	CST_SONG_update = "CST-SONG-update",
 	USER_update = "USER-update",
 }

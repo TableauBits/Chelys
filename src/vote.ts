@@ -38,7 +38,7 @@ export interface CstGradeReqUnsubscribe {
 }
 
 export interface CstGradeResUserDataUpdate {
-	userData: GradeSummary;
+	userData: GradeUserData;
 }
 
 export interface CstGradeResSummaryUpdate {
