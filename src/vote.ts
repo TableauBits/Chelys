@@ -38,6 +38,7 @@ export interface CstGradeReqUnsubscribe {
 }
 
 export interface CstGradeResUserDataUpdate {
+	status: "added" | "modified" | "removed";
 	userData: GradeUserData;
 }
 
