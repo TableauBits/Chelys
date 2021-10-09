@@ -16,32 +16,32 @@ export interface GradeSummary {
 
 // REQUESTS / RESPONSES
 
-export interface CstGradeReqEdit {
+export interface GradeReqEdit {
 	cstId: string,
 	voteData: GradeVote
 }
 
-export interface CstGradeReqGetAll {
+export interface GradeReqGetAll {
 	cstId: string;
 }
 
-export interface CstGradeReqGetUser {
+export interface GradeReqGetUser {
 	cstId: string;
 }
 
-export interface CstGradeReqGetSummary {
+export interface GradeReqGetSummary {
 	cstId: string;
 }
 
-export interface CstGradeReqUnsubscribe {
+export interface GradeReqUnsubscribe {
 	cstId: string;
 }
 
-export interface CstGradeResUserDataUpdate {
+export interface GradeResUserDataUpdate {
 	status: "added" | "modified" | "removed";
 	userData: GradeUserData;
 }
 
-export interface CstGradeResSummaryUpdate {
+export interface GradeResSummaryUpdate {
 	summary: GradeSummary;
 }
