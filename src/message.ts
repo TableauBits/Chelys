@@ -10,22 +10,22 @@ export enum EventType {
 	CLIENT_authenticate = "CLIENT-authenticate",
 	CLIENT_ping = "CLIENT-ping",
 
-	CST_create = "CST-create", 
+	CST_create = "CST-create",
 	CST_get = "CST-get",
 	CST_get_from_user = "CST-get-from-user",
 	CST_join = "CST-join",
 	CST_unsubscribe = "CST-unsubscribe",
 
-	CST_GRADE_edit = "CST-GRADE-edit",
-	CST_GRADE_get_all = "CST-GRADE-get-all",
-	CST_GRADE_get_user = "CST-GRADE-get-user",
-	CST_GRADE_get_summary = "CST-GRADE-get-summary",
-	CST_GRADE_unsubscribe = "CST-GRADE-unsubscribe",
-
 	CST_SONG_add = "CST-SONG-add",
 	CST_SONG_get_all = "CST-SONG-get-all",
 	CST_SONG_remove = "CST-SONG-remove",
 	CST_SONG_unsubscribe = "CST-SONG-unsubscribe",
+
+	CST_SONG_GRADE_edit = "CST-SONG-GRADE-edit",
+	CST_SONG_GRADE_get_all = "CST-SONG-GRADE-get-all",
+	CST_SONG_GRADE_get_user = "CST-SONG-GRADE-get-user",
+	CST_SONG_GRADE_get_summary = "CST-SONG-GRADE-get-summary",
+	CST_SONG_GRADE_unsubscribe = "CST-SONG-GRADE-unsubscribe",
 
 	USER_create = "USER-create",
 	USER_edit = "USER-edit",
@@ -35,8 +35,9 @@ export enum EventType {
 
 	// From server
 	CST_update = "CST-update",
-	CST_GRADE_update = "CST-GRADE-update",
 	CST_SONG_update = "CST-SONG-update",
+	CST_SONG_GRADE_summary_update = "CST-SONG-GRADE-summary-update",
+	CST_SONG_GRADE_userdata_update = "CST-SONG-GRADE-userdata-update",
 	USER_update = "USER-update",
 }
 
