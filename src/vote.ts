@@ -14,6 +14,11 @@ export interface GradeSummary {
   voteCount: number;
 }
 
+export interface DocumentGradeUserData {
+	uid: string;
+	values: Record<string, unknown>;
+}
+
 // REQUESTS / RESPONSES
 
 export interface CstGradeReqEdit {
@@ -39,4 +44,9 @@ export interface CstGradeReqUnsubscribe {
 
 export interface CstGradeResUpdate {
 	summary: GradeSummary;
+}
+
+export interface DocumentGradeResUserDataUpdate {
+	status: "added" | "modified" | "removed";
+	userData: DocumentGradeUserData;
 }
