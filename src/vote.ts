@@ -51,7 +51,7 @@ export interface GradeReqUnsubscribe {
 }
 
 export interface GradeResSummaryUpdate {
-	summary: GradeSummary;
+	summary: KGradeSummary;
 }
 
 export interface GradeResUserDataUpdate {
