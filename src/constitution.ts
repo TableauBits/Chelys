@@ -86,3 +86,8 @@ export interface CstResUpdate {
 }
 
 export type CstReqGetFromUser = {}
+
+export interface CstReqUpdateState {
+	id: string;
+	newState: number;
+}

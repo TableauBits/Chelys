@@ -12,11 +12,19 @@ export interface GradeUserData {
 
 export interface GradeSummary {
 	voteCount: number;
+	userCount: Map<string, number>
 }
 
-export interface DocumentGradeUserData {
+// Interface use in Kalimba and compatible with Firebase and JSON
+
+export interface KGradeUserData {
 	uid: string;
 	values: Record<string, unknown>;
+}
+
+export interface KGradeSummary {
+	voteCount: number;
+	userCount: Record<string, number>
 }
 
 // REQUESTS / RESPONSES
@@ -42,16 +50,11 @@ export interface GradeReqUnsubscribe {
 	cstId: string;
 }
 
-export interface GradeResUserDataUpdate {
-	status: "added" | "modified" | "removed";
-	userData: GradeUserData;
-}
-
 export interface GradeResSummaryUpdate {
 	summary: GradeSummary;
 }
 
-export interface DocumentGradeResUserDataUpdate {
+export interface GradeResUserDataUpdate {
 	status: "added" | "modified" | "removed";
-	userData: DocumentGradeUserData;
+	userData: KGradeUserData;
 }
