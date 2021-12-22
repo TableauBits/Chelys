@@ -77,6 +77,10 @@ export interface CstReqJoin {
 	id: string;
 }
 
+export interface CstReqState {
+	state: number;
+}
+
 export interface CstReqUnsubscribe {
 	ids: string[];
 }
