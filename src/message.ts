@@ -17,6 +17,11 @@ export enum EventType {
 	CST_state = "CST-state",
 	CST_unsubscribe = "CST-unsubscribe",
 
+	CST_FAV_add = "CST-FAV-add",
+	CST_FAV_remove = "CST-FAV-remove",
+	CST_FAV_get = "CST-FAV-get",
+	CST_FAV_unsubscribe = "CST-FAV-unsubscribe", 
+
 	CST_SONG_add = "CST-SONG-add",
 	CST_SONG_get_all = "CST-SONG-get-all",
 	CST_SONG_remove = "CST-SONG-remove",

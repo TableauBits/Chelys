@@ -1,5 +1,6 @@
 export * from './client';
 export * from './constitution';
+export * from './favorite'
 export * from './grade';
 export * from './message';
 export * from './song';
