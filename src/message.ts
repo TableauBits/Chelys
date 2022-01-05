@@ -41,6 +41,7 @@ export enum EventType {
 
 	// From server
 	CST_update = "CST-update",
+	CST_FAV_update = "CST-FAV-update",
 	CST_SONG_update = "CST-SONG-update",
 	CST_SONG_GRADE_summary_update = "CST-SONG-GRADE-summary-update",
 	CST_SONG_GRADE_userdata_update = "CST-SONG-GRADE-userdata-update",
