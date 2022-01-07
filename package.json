@@ -1,33 +1,33 @@
 {
-	"name": "chelys",
-	"version": "2.3.1",
-	"description": "Common code between Yatga and Kalimba",
-	"main": "dist/index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"build": "tsc"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/TableauBits/Chelys.git"
-	},
-	"keywords": [
-		"matbay"
-	],
-	"author": "tableaubits",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/TableauBits/Chelys/issues"
-	},
-	"homepage": "https://github.com/TableauBits/Chelys#readme",
-	"dependencies": {},
-	"files": [
-		"dist/"
-	],
-	"types": "dist/index.d.ts",
-	"devDependencies": {
-		"@types/node": "^16.10.1",
-		"eslint": "^7.32.0",
-		"typescript": "^4.4.3"
-	}
+    "name": "chelys",
+    "version": "2.3.2",
+    "description": "Common code between Yatga and Kalimba",
+    "main": "dist/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "tsc"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/TableauBits/Chelys.git"
+    },
+    "keywords": [
+        "matbay"
+    ],
+    "author": "tableaubits",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/TableauBits/Chelys/issues"
+    },
+    "homepage": "https://github.com/TableauBits/Chelys#readme",
+    "dependencies": {},
+    "files": [
+        "dist/"
+    ],
+    "types": "dist/index.d.ts",
+    "devDependencies": {
+        "@types/node": "^16.10.1",
+        "eslint": "^7.32.0",
+        "typescript": "^4.4.3"
+    }
 }
