@@ -1,6 +1,6 @@
 // TYPE / CONST
 
-import { GradeState } from ".";
+import { GradeState, ResponseStatus } from ".";
 
 export const OWNER_INDEX = 0;
 
@@ -107,4 +107,8 @@ export type CstReqGetFromUser = {}
 export interface CstReqUpdateState {
     id: string;
     newState: number;
+}
+
+export interface CstResJoin {
+    status: ResponseStatus;
 }
