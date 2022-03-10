@@ -33,6 +33,11 @@ export enum EventType {
 	CST_SONG_GRADE_get_summary = "CST-SONG-GRADE-get-summary",
 	CST_SONG_GRADE_unsubscribe = "CST-SONG-GRADE-unsubscribe",
 
+	INVITE_delete = "INVITE-delete",
+	INVITE_get = "INVITE-get",
+	INVITE_new = "INVITE-new",
+	INVITE_unsubscribe = "INVITE-unsubscribe",
+
 	USER_create = "USER-create",
 	USER_edit = "USER-edit",
 	USER_get = "USER-get",
@@ -45,6 +50,7 @@ export enum EventType {
 	CST_SONG_update = "CST-SONG-update",
 	CST_SONG_GRADE_summary_update = "CST-SONG-GRADE-summary-update",
 	CST_SONG_GRADE_userdata_update = "CST-SONG-GRADE-userdata-update",
+	INVITE_update = "INVITE-update",
 	USER_update = "USER-update",
 }
 

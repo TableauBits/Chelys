@@ -1,6 +1,6 @@
 // TYPE / CONST
 
-export const FAVORITES_MAX_LENGTH = 5;
+export const FAVORITES_MAX_LENGTH = 8;
 
 export interface UserFavorites {
   uid: string;
