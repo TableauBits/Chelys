@@ -1,5 +1,7 @@
 // TYPE / CONST
 
+import { ResponseStatus } from "./client";
+
 export interface Invite {
   id: string;
   createdBy: string;
@@ -10,10 +12,18 @@ export interface Invite {
 
 export interface InvReqNew {}
 
-export interface InvReqGet {}
+export interface InvReqGetAll {}
+
+export interface InvRefCheck{
+  id: string;
+}
 
 export interface InvReqDelete {
   id: string;
+}
+
+export interface InvResCheck {
+  status: ResponseStatus;
 }
 
 export interface InvResUnsubscribe {}
