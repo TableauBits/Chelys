@@ -1,6 +1,6 @@
-// TYPE / CONST
-
 import { ResponseStatus } from "./client";
+
+// TYPE / CONST
 
 export interface Invite {
   id: string;
@@ -29,5 +29,6 @@ export interface InvResCheck {
 export interface InvResUnsubscribe {}
 
 export interface InvResUpdate {
+  status: "added" | "modified" | "removed";
   invite: Invite;
 }
