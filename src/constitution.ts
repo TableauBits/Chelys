@@ -94,6 +94,12 @@ export interface CstReqState {
     id: string;
 }
 
+export interface CstReqNameURL {
+    id: string;
+    name: string | undefined;
+    url: string | undefined;
+}
+
 export interface CstReqUnsubscribe {
     ids: string[];
 }

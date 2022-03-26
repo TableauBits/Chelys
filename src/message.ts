@@ -14,6 +14,7 @@ export enum EventType {
 	CST_get = "CST-get",
 	CST_get_from_user = "CST-get-from-user",
 	CST_join = "CST-join",
+	CST_name_url = "CST-name-url",
 	CST_state = "CST-state",
 	CST_unsubscribe = "CST-unsubscribe",
 
