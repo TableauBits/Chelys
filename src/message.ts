@@ -41,7 +41,8 @@ export enum EventType {
 	INVITE_unsubscribe = "INVITE-unsubscribe",
 
 	USER_create = "USER-create",
-	USER_edit = "USER-edit",
+	USER_edit_profile = "USER-edit-profile",
+	USER_edit_roles = "USER-edit-roles",
 	USER_get = "USER-get",
 	USER_get_all = "USER-get-all",
 	USER_unsubscribe = "USER-unsubscribe",

@@ -30,9 +30,15 @@ export const EMPTY_USER: User = {
 export interface UsrReqGet {
 	uids: string[];
 }
-export interface UsrReqEdit {
+export interface UsrReqEditProfile {
 	userData: User;
 }
+
+export interface UsrReqEditRoles {
+	uid: string;
+	roles: string[];
+}
+
 export interface UsrReqUnsubscribe {
 	uids: string[];
 }
