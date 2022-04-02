@@ -1,48 +1,53 @@
 // TYPE / CONST
 
 export enum SongPlatform {
-  YOUTUBE
+	YOUTUBE
+}
+
+export interface Title {
+	original: string;
+	translation?: string;
 }
 
 export interface Song {
-  id: number
-  title: string;
-  platform: SongPlatform;
-  url: string;
-  user: string;
-  author: string;
+	id: number
+	title: Title;
+	platform: SongPlatform;
+	url: string;
+	user: string;
+	author: string;
 }
 
 export const EMPTY_SONG: Song = {
-  id: -1,
-  title: '',
-  platform: -1,
-  url: '',
-  user: '',
-  author: '',
+	id: -1,
+	title: { original: '' },
+	platform: -1,
+	url: '',
+	user: '',
+	author: '',
 }
 
 // REQUESTS / RESPONSES
 
 export interface CstSongReqAdd {
-  cstId: string;
-  songData: Song;
+	cstId: string;
+	songData: Song;
 }
 
 export interface CstSongReqRemove {
-  cstId: string;
-  songId: number;
+	cstId: string;
+	songId: number;
 }
 
 export interface CstSongReqGetAll {
-  cstId: string;
+	cstId: string;
 }
 
 export interface CstSongResUpdate {
-  songInfo: Song;
-  status: "added" | "modified" | "removed";
+	songInfo: Song;
+	status: "added" | "modified" | "removed";
 }
 
 export interface CstSongReqUnsubscribe {
-  cstId: string;
+	cstId: string;
 }
