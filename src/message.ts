@@ -11,6 +11,7 @@ export enum EventType {
 	CLIENT_ping = "CLIENT-ping",
 
 	CST_create = "CST-create",
+	CST_delete = "CST-delete",
 	CST_get = "CST-get",
 	CST_get_from_user = "CST-get-from-user",
 	CST_join = "CST-join",

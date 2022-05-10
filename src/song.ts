@@ -11,7 +11,8 @@ export interface Title {
 
 export interface Song {
 	id: number
-	title: Title;
+	// title: Title;
+	title: string;
 	platform: SongPlatform;
 	url: string;
 	user: string;
@@ -20,7 +21,8 @@ export interface Song {
 
 export const EMPTY_SONG: Song = {
 	id: -1,
-	title: { original: '' },
+	// title: { original: '' },
+	title: '',
 	platform: -1,
 	url: '',
 	user: '',

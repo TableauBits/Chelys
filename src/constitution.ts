@@ -118,3 +118,11 @@ export interface CstReqUpdateState {
 export interface CstResJoin {
     status: ResponseStatus;
 }
+
+export interface CstReqDelete {
+    id: string;
+}
+
+export interface CstResDelete {
+    id: string;
+}
