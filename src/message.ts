@@ -56,6 +56,7 @@ export enum EventType {
 	CST_SONG_update = "CST-SONG-update",
 	CST_SONG_GRADE_summary_update = "CST-SONG-GRADE-summary-update",
 	CST_SONG_GRADE_userdata_update = "CST-SONG-GRADE-userdata-update",
+	HISTORY_update = "HISTORY-update",
 	INVITE_update = "INVITE-update",
 	USER_update = "USER-update",
 }
