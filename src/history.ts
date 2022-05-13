@@ -9,18 +9,17 @@ export interface History {
   name: string;
   date: string;
   title: string;
-  platform: SongPlatform;  // enum SongPlatform
+  platform: SongPlatform;
   url: string;
   user: string;
   author: string;
   users: string[];
-  // type: ConstitutionType;
 }
 
 // REQUESTS / RESPONSES
 
-export interface HistoryReqGet {}
+export interface HistoryReqGetAll {}
 
-export interface HistoryResGet {
+export interface HistoryResUpdate {
   history: History;
 }
