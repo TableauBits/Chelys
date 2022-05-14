@@ -2,7 +2,7 @@
 
 import { SongPlatform } from "./song";
 
-export interface History {
+export interface PantheonSong {
   id: string;
   season: number;
   part: number;
@@ -18,8 +18,8 @@ export interface History {
 
 // REQUESTS / RESPONSES
 
-export interface HistoryReqGetAll {}
+export interface PantheonReqGetAll {}
 
-export interface HistoryResUpdate {
-  history: History;
+export interface PantheonResUpdate {
+  pantheon: PantheonSong;
 }
