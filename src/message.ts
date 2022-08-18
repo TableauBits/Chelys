@@ -22,7 +22,7 @@ export enum EventType {
 	CST_FAV_add = "CST-FAV-add",
 	CST_FAV_remove = "CST-FAV-remove",
 	CST_FAV_get = "CST-FAV-get",
-	CST_FAV_unsubscribe = "CST-FAV-unsubscribe", 
+	CST_FAV_unsubscribe = "CST-FAV-unsubscribe",
 
 	CST_SONG_add = "CST-SONG-add",
 	CST_SONG_get_all = "CST-SONG-get-all",
@@ -35,10 +35,9 @@ export enum EventType {
 	CST_SONG_GRADE_get_summary = "CST-SONG-GRADE-get-summary",
 	CST_SONG_GRADE_unsubscribe = "CST-SONG-GRADE-unsubscribe",
 
-	INVITE_check = "INVITE-check",
+	INVITE_new = "INVITE-new",
 	INVITE_delete = "INVITE-delete",
 	INVITE_get_all = "INVITE-get-all",
-	INVITE_new = "INVITE-new",
 	INVITE_unsubscribe = "INVITE-unsubscribe",
 
 	PANTHEON_get_all = "PANTHEON-get-all",
