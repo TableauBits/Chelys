@@ -49,7 +49,7 @@ export interface InvResGET {
 
 // POST "/invite/:id"
 export interface InvReqPOST {
-	newAccout: NewAccount;
+	newAccount: NewAccount;
 }
 export interface InvResPOST {
 	response: ResponseStatus;
