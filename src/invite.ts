@@ -13,6 +13,13 @@ export interface Inviter {
 	photoURL: string;
 }
 
+export interface NewAccount {
+	uid: string;
+	email: string;
+	displayName: string;
+	photoURL: string;
+}
+
 // REQUESTS / RESPONSES
 
 export interface InvReqNew { }
@@ -42,7 +49,7 @@ export interface InvResGET {
 
 // POST "/invite/:id"
 export interface InvReqPOST {
-	idToken: string;
+	newAccout: NewAccount;
 }
 export interface InvResPOST {
 	response: ResponseStatus;
