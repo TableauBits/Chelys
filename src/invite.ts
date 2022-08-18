@@ -8,10 +8,8 @@ export interface Invite {
 	date: string;
 }
 
-export interface NewAccount {
-	uid: string;
+export interface Inviter {
 	displayName: string;
-	email: string;
 	photoURL: string;
 }
 
@@ -25,11 +23,6 @@ export interface InvReqDelete {
 
 export interface InvReqGetAll { }
 
-export interface InvReqCheck {
-	id: string;
-	account: NewAccount;
-}
-
 export interface InvReqUnsubscribe { }
 
 export interface InvResCheck {
@@ -39,4 +32,18 @@ export interface InvResCheck {
 export interface InvResUpdate {
 	status: "added" | "modified" | "removed";
 	invite: Invite;
+}
+
+// GET "/invite/:id"
+export interface InvResGET {
+	isValid: boolean;
+	inviter: Inviter;
+}
+
+// POST "/invite/:id"
+export interface InvReqPOST {
+	idToken: string;
+}
+export interface InvResPOST {
+	response: ResponseStatus;
 }
