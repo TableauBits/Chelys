@@ -18,8 +18,14 @@ export interface PantheonSong {
 
 // REQUESTS / RESPONSES
 
+export interface PantheonReqAdd {
+  pantheon: PantheonSong;
+}
+
 export interface PantheonReqGetAll {}
 
 export interface PantheonResUpdate {
   pantheon: PantheonSong;
 }
+
+export interface PantheonReqUnsubscribe {}

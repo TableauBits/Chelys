@@ -40,7 +40,9 @@ export enum EventType {
 	INVITE_get_all = "INVITE-get-all",
 	INVITE_unsubscribe = "INVITE-unsubscribe",
 
+	PANTHEON_add = "PANTHEON-add",
 	PANTHEON_get_all = "PANTHEON-get-all",
+	PANTHEON_unsubscribe = "PANTHEON-unsubscribe",
 
 	USER_create = "USER-create",
 	USER_edit_profile = "USER-edit-profile",
