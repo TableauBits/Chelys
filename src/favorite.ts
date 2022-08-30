@@ -9,24 +9,24 @@ export interface UserFavorites {
 
 // REQUESTS / RESPONSES
 
-export interface CstFavReqAdd {
+export interface FavReqAdd {
   cstId: string;
   songId: number;
 }
 
-export interface CstFavReqRemove {
+export interface FavReqRemove {
   cstId: string;
   songId: number;
 }
 
-export interface CstFavReqGet {
+export interface FavReqGet {
   cstId: string;
 }
 
-export interface CstFavReqUnsubscribe {
+export interface FavReqUnsubscribe {
   cstId: string;
 }
 
-export interface CstFavResUpdate {
+export interface FavResUpdate {
   userFavorites: UserFavorites;
 }

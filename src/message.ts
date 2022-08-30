@@ -19,15 +19,15 @@ export enum EventType {
 	CST_state = "CST-state",
 	CST_unsubscribe = "CST-unsubscribe",
 
-	CST_FAV_add = "CST-FAV-add",
-	CST_FAV_remove = "CST-FAV-remove",
-	CST_FAV_get = "CST-FAV-get",
-	CST_FAV_unsubscribe = "CST-FAV-unsubscribe",
-
 	CST_SONG_add = "CST-SONG-add",
 	CST_SONG_get_all = "CST-SONG-get-all",
 	CST_SONG_remove = "CST-SONG-remove",
 	CST_SONG_unsubscribe = "CST-SONG-unsubscribe",
+
+	CST_SONG_FAV_add = "CST-SONG-FAV-add",
+	CST_SONG_FAV_remove = "CST-SONG-FAV-remove",
+	CST_SONG_FAV_get = "CST-SONG-FAV-get",
+	CST_SONG_FAV_unsubscribe = "CST-SONG-FAV-unsubscribe",
 
 	CST_SONG_GRADE_edit = "CST-SONG-GRADE-edit",
 	CST_SONG_GRADE_get_all = "CST-SONG-GRADE-get-all",
