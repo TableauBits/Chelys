@@ -1,6 +1,7 @@
 // TYPE / CONST
 
 export enum SongPlatform {
+	SOUNDCLOUD,
 	YOUTUBE
 }
 
