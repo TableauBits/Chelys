@@ -1,8 +1,8 @@
 // TYPE / CONST
 
 export enum SongPlatform {
-	SOUNDCLOUD,
-	YOUTUBE
+	YOUTUBE 		= 0,
+	SOUNDCLOUD 	= 1,
 }
 
 export interface Title {
