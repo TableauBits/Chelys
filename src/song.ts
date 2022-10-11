@@ -1,4 +1,6 @@
 // TYPE / CONST
+export const SONG_NAME_LENGTH = 100;
+export const SONG_AUTHOR_LENGTH = 100;
 
 export enum SongPlatform {
 	INVALID_PLATFORM 	= -1,
