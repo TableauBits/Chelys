@@ -25,10 +25,11 @@ export interface Constitution {
     type: ConstitutionType;
     state: number;
     playlistLink: string;
-
     users: string[];                // user[0] as owner
     maxUserCount: number;
     numberOfSongsPerUser: number;
+    startDate?: string;
+    endDate?: string;
 }
 
 export const EMPTY_CONSTITUTION: Constitution = {
