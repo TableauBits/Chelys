@@ -1,6 +1,6 @@
 {
 	"name": "chelys",
-	"version": "2.10.0",
+	"version": "2.11.0",
 	"description": "Common code between Yatga and Kalimba",
 	"main": "dist/index.js",
 	"scripts": {

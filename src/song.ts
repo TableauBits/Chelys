@@ -21,6 +21,12 @@ export interface Song {
 	url: string;
 	user: string;
 	author: string;
+
+	// new optionnal parameters, not backward compatible
+	addedDate?: string;
+	album?: string;
+	languages?: string[];
+	releaseYear?: number;
 }
 
 export const EMPTY_SONG: Song = {
