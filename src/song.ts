@@ -25,6 +25,8 @@ export interface Song {
 	// new optionnal parameters, not backward compatible
 	addedDate?: string;
 	album?: string;
+	altTitles?: string[];
+	genres?: string[];
 	languages?: string[];
 	releaseYear?: number;
 }
