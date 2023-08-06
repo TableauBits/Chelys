@@ -3,19 +3,14 @@ export const SONG_NAME_LENGTH = 100;
 export const SONG_AUTHOR_LENGTH = 100;
 
 export enum SongPlatform {
-	INVALID_PLATFORM 	= -1,
-	YOUTUBE 					= 0,
-	SOUNDCLOUD 				= 1,
-}
-
-export interface Title {
-	original: string;
-	translation?: string;
+	INVALID_PLATFORM = -1,
+	YOUTUBE = 0,
+	SOUNDCLOUD = 1,
+	PEERTUBE = 2,
 }
 
 export interface Song {
 	id: number
-	// title: Title;
 	title: string;
 	platform: SongPlatform;
 	url: string;
@@ -33,7 +28,6 @@ export interface Song {
 
 export const EMPTY_SONG: Song = {
 	id: -1,
-	// title: { original: '' },
 	title: '',
 	platform: -1,
 	url: '',
