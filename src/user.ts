@@ -14,6 +14,7 @@ export interface User {
 	photoURL: string;
 	roles: Role[];
 	description: string;
+	discordId?: string;
 }
 
 export const EMPTY_USER: User = {
