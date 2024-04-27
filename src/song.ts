@@ -24,6 +24,7 @@ export interface Song {
 	genres?: string[];
 	languages?: string[];
 	releaseYear?: number;
+	featuring?: string[];
 }
 
 export const EMPTY_SONG: Song = {
