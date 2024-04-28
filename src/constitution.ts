@@ -5,13 +5,11 @@ import { GradeState, ResponseStatus } from ".";
 export const OWNER_INDEX = 0;
 
 export enum ConstitutionType {
-    INVALID = -1,
     GRADE,
     LENGTH
 }
 
 export enum AnonymousLevel {
-    INVALID = -1,
     PUBLIC,
     NO_USERNAME,
     SOUND_ONLY
@@ -41,9 +39,9 @@ export const EMPTY_CONSTITUTION: Constitution = {
     season: -1,
     part: -1,
     isPublic: false,
-    anonymousLevel: AnonymousLevel.INVALID,
+    anonymousLevel: AnonymousLevel.PUBLIC,
     maxUserCount: -1,
-    type: ConstitutionType.INVALID,
+    type: ConstitutionType.GRADE,
     state: -1,
     numberOfSongsPerUser: -1,
     playlistLink: '',
