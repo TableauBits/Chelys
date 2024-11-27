@@ -31,6 +31,7 @@ export interface Constitution {
     startDate?: string;
     endDate?: string;
     maxGrade?: number;
+    judges?: string[];
 }
 
 export const EMPTY_CONSTITUTION: Constitution = {
