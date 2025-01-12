@@ -9,17 +9,17 @@ export enum Role {
 
 export interface User {
 	uid: string;
-	email: string;
 	displayName: string;
 	photoURL: string;
 	roles: Role[];
 	description: string;
 	discordId?: string;
+	nWins?: number;
+	nParticipations?: number;
 }
 
 export const EMPTY_USER: User = {
 	uid: '',
-	email: '',
 	displayName: '',
 	photoURL: '',
 	roles: [],
