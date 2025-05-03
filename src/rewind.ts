@@ -49,7 +49,7 @@ export interface RewindBaseStats {
   fav: RewindFav;
   genres: RewindGenres;
   languages: RewindLanguages;
-  missingInfos: RewindMissingInfos;
+  missing: RewindMissingInfos;
   nConstitutions: number;
   nSongs: number;
   uid: string;
