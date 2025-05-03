@@ -15,7 +15,6 @@ export interface Inviter {
 
 export interface NewAccount {
 	uid: string;
-	email: string;
 	displayName: string;
 	photoURL: string;
 }

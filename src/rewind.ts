@@ -83,14 +83,15 @@ export interface RewindPerYear {
 
 // REQUESTS
 export interface RwdReqGet {
-  uid: string
+  uid: string;
 }
 
 export interface RwdReqUnsubscribe {
-  uid: string,
+  uid: string;
 }
 
 // RESPONSES
 export interface RwdResUpdate {
-  rewinds: Map<number, RewindPerYear>;
+  year: number;
+  rewind: RewindPerYear;
 }
