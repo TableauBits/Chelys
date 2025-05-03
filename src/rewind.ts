@@ -1,0 +1,96 @@
+import { Song } from "./song";
+
+// TYPES
+export interface RewindFav {
+  count: number;
+  fromUsers: Map<string, number>;
+  perUser: Map<string, number>;
+  totalAvailable: number;
+}
+
+export interface RewindRankSong {
+  id: string;
+  rank: number;
+  score: number;
+  mean_score: number;
+}
+
+export interface RewindDecades {
+  meanVotes: Map<string, number>;
+  participation: Map<string, number>;
+}
+
+export interface RewindGenres {
+  meanVotes: Map<string, number>;
+  participation: Map<string, number>;
+}
+
+export interface RewindLanguages {
+  meanVotes: Map<string, number>;
+  participation: Map<string, number>;
+}
+
+export interface RewindMissingInfos {
+  decades: number;
+  genres: number;
+  languages: number;
+}
+
+export interface RewindUser {
+  meanScoreFromUser: Map<string, number>;
+  meanScorePerUser: Map<string, number>;
+}
+
+export interface RewindBaseStats {
+  authors: Map<string, number>;
+  bestSongs: {songs: RewindRankSong[];};
+  decades: RewindDecades;
+  displayName: string;
+  fav: RewindFav;
+  genres: RewindGenres;
+  languages: RewindLanguages;
+  missingInfos: RewindMissingInfos;
+  nConstitutions: number;
+  nSongs: number;
+  uid: string;
+  users: RewindUser;
+  worstSongs: {songs: RewindRankSong[];};
+}
+
+export interface ConstitutionMetadata {
+  nSongs: number;
+  name: string;
+}
+
+export interface Metadata {
+  cstInfo: Map<string, ConstitutionMetadata>;
+  songInfo: Map<string, Song>;
+}
+
+export interface Team {
+  extremist: string;
+  leader: string;
+  members: string[];
+  name: string;
+}
+
+export interface RewindPerYear {
+  baseStats: RewindBaseStats;
+  metadata: Metadata;
+  teamSongs: Team;
+  teamVotes: Team;
+}
+
+// REQUESTS
+export interface RwdReqGet {
+  uid: string
+}
+
+export interface RwdReqUnsubscribe {
+  uid: string,
+}
+
+// RESPONSES
+export interface RwdResUpdate {
+  rewinds: Map<number, RewindPerYear>;
+}

@@ -51,6 +51,9 @@ export enum EventType {
 	USER_get_all = "USER-get-all",
 	USER_unsubscribe = "USER-unsubscribe",
 
+	REWIND_get = "RWD-get",
+	REWIND_unsubscribe = "RWD-unsubscribe",
+
 	// From server
 	CST_update = "CST-update",
 	CST_SONG_update = "CST-SONG-update",
@@ -60,6 +63,7 @@ export enum EventType {
 	INVITE_update = "INVITE-update",
 	PANTHEON_update = "PANTHEON-update",
 	USER_update = "USER-update",
+	REWIND_update = "RWD-update",
 }
 
 // FUNCTION

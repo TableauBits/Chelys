@@ -7,3 +7,4 @@ export * from './message';
 export * from './pantheon';
 export * from './song';
 export * from './user';
+export * from './rewind';
