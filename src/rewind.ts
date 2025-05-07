@@ -43,7 +43,7 @@ export interface RewindUser {
 
 export interface RewindBaseStats {
   authors: Map<string, number>;
-  bestSongs: {songs: RewindRankSong[];};
+  bestSongs: { songs: RewindRankSong[]; };
   decades: RewindDecades;
   displayName: string;
   fav: RewindFav;
@@ -54,7 +54,7 @@ export interface RewindBaseStats {
   nSongs: number;
   uid: string;
   users: RewindUser;
-  worstSongs: {songs: RewindRankSong[];};
+  worstSongs: { songs: RewindRankSong[]; };
 }
 
 export interface ConstitutionMetadata {
@@ -80,6 +80,65 @@ export interface RewindPerYear {
   teamSongs: Team;
   teamVotes: Team;
 }
+
+export const EMPTY_REWIND: RewindPerYear = {
+  baseStats: {
+    authors: new Map(),
+    bestSongs: {
+      songs: []
+    },
+    decades: {
+      meanVotes: new Map(),
+      participation: new Map()
+    },
+    displayName: '',
+    fav: {
+      count: 0,
+      fromUsers: new Map(),
+      perUser: new Map(),
+      totalAvailable: 0
+    },
+    genres: {
+      meanVotes: new Map(),
+      participation: new Map()
+    },
+    languages: {
+      meanVotes: new Map(),
+      participation: new Map()
+    },
+    missing: {
+      decades: 0,
+      genres: 0,
+      languages: 0
+    },
+    nConstitutions: 0,
+    nSongs: 0,
+    uid: '',
+    users: {
+      meanScoreFromUser: new Map(),
+      meanScorePerUser: new Map()
+    },
+    worstSongs: {
+      songs: []
+    }
+  },
+  metadata: {
+    cstInfo: new Map(),
+    songInfo: new Map()
+  },
+  teamSongs: {
+    extremist: '',
+    leader: '',
+    members: [],
+    name: ''
+  },
+  teamVotes: {
+    extremist: '',
+    leader: '',
+    members: [],
+    name: ''
+  }
+};
 
 // REQUESTS
 export interface RwdReqGet {
