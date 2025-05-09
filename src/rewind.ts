@@ -52,6 +52,7 @@ export interface RewindBaseStats {
   missing: RewindMissingInfos;
   nConstitutions: number;
   nSongs: number;
+  nVotes: number;
   uid: string;
   users: RewindUser;
   worstSongs: { songs: RewindRankSong[]; };
@@ -113,6 +114,7 @@ export const EMPTY_REWIND: RewindPerYear = {
     },
     nConstitutions: 0,
     nSongs: 0,
+    nVotes: 0,
     uid: '',
     users: {
       meanScoreFromUser: new Map(),
