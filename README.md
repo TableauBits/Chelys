@@ -5,5 +5,6 @@ Data struct for :
 * Constitutions
 * Invites
 * Songs
+* Rewind
 * Users
 * Votes
