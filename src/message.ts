@@ -35,6 +35,11 @@ export enum EventType {
 	CST_SONG_GRADE_get_summary = "CST-SONG-GRADE-get-summary",
 	CST_SONG_GRADE_unsubscribe = "CST-SONG-GRADE-unsubscribe",
 
+	CST_SONG_GUESS_add = "CST-SONG-GUESS-add",
+	CST_SONG_GUESS_get_all = "CST-SONG-GUESS-get-all",
+	CST_SONG_GUESS_get_user = "CST-SONG-GUESS-get-user",
+	CST_SONG_GUESS_unsubscribe = "CST-SONG-GUESS-unsubscribe",
+
 	INVITE_new = "INVITE-new",
 	INVITE_delete = "INVITE-delete",
 	INVITE_get_all = "INVITE-get-all",
@@ -60,6 +65,7 @@ export enum EventType {
 	CST_SONG_FAV_update = "CST-SONG-FAV-update",
 	CST_SONG_GRADE_summary_update = "CST-SONG-GRADE-summary-update",
 	CST_SONG_GRADE_userdata_update = "CST-SONG-GRADE-userdata-update",
+	CST_SONG_GUESS_update = "CST-SONG-GUESS-update",
 	INVITE_update = "INVITE-update",
 	PANTHEON_update = "PANTHEON-update",
 	USER_update = "USER-update",

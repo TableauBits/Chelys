@@ -2,6 +2,7 @@ export * from './client';
 export * from './constitution';
 export * from './favorite'
 export * from './grade';
+export * from './guess';
 export * from './invite';
 export * from './message';
 export * from './pantheon';

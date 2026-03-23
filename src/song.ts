@@ -9,6 +9,15 @@ export enum SongPlatform {
 	PEERTUBE = 2,
 }
 
+export const MODIFIERS = [
+	"AI COVER",
+	"INSTRUMENTAL",
+	"NIGHTCORE",
+	"SLOWED",
+	"REVERSED",
+	"REVERB"
+]
+
 export interface Song {
 	id: number
 	title: string;
@@ -26,6 +35,7 @@ export interface Song {
 	releaseYear?: number;
 	featuring?: string[];
 	countries?: string[];
+	modifiers?: string[];
 }
 
 export const EMPTY_SONG: Song = {
