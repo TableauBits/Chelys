@@ -15,15 +15,15 @@ export interface KGuessUserData {
 
 // REQUESTS / RESPONSES
 
-export interface GradeReqEdit {
+export interface GuessReqEdit {
     cstId: string,
     guessData: Guess
 }
 
-export interface GradeReqGetAll {
+export interface GuessReqGetAll {
     cstId: string;
 }
 
-export interface GradeReqGetUser {
+export interface GuessReqGetUser {
     cstId: string;
 }
