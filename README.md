@@ -8,3 +8,4 @@ Data struct for :
 * Rewind
 * Users
 * Votes
+* Guesses

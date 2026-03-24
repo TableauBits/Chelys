@@ -1,3 +1,5 @@
+// TYPE / CONST
+
 export interface Guess {
   songId: number;
   guess: string;
