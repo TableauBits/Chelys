@@ -29,3 +29,8 @@ export interface GuessReqGetAll {
 export interface GuessReqGetUser {
     cstId: string;
 }
+
+export interface GuessResGetUser {
+    uid: string;
+    guesses: KGuessUserData;
+}
